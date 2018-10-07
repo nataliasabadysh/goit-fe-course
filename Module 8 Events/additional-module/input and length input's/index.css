@@ -1,0 +1,21 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  outline: 2px solid teal;
+}
+
+.inputs input {
+  padding: 4px;
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-family: inherit;
+}

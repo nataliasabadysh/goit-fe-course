@@ -1,0 +1,13 @@
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px;
+}
+input, button{
+  font-size: 14px;
+  padding: 4px 8px ;
+}
+button{
+  background-color: #2196f3;
+}

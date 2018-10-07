@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Module - 7 </title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+
+<form class="note-editor js-note-editor">
+  <input type="text">
+  <button class="button" type="submit">Add Note</button>
+</form>
+
+<ul class="note-list"></ul>
+
+
+<!-- MODAL -->
+<div class="backdrop">
+  <div class="modal">
+    <input type="text">
+    <div class="actions">
+      <button class="button" data-action="note-save">Save</button>
+      <button class="button" data-action="close-modal">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/plugin.js"></script>
+</body>
+</html>

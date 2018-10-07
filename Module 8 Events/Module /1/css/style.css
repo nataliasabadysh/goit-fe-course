@@ -1,0 +1,36 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+.image-gallery {
+    margin: 0 auto;
+    text-align: center;
+}
+.preview {
+    margin: 0;
+    padding: 0;
+}
+
+.preview img {
+    border: solid 1px #ccc;
+    width: 312px;
+    height: 213px;
+    padding: 3px;
+    margin: 2px;
+    float: left;
+    cursor: pointer;
+}
+
+.preview li {
+    list-style: none;
+    
+}
+
+.fullview {
+    border: solid 1px #ccc;
+    width: 1280px;
+    height: 853px;
+    padding: 5px;
+    cursor: pointer;
+}
+

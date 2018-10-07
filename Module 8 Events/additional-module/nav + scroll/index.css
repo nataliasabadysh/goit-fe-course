@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "PT Sans", sans-serif;
+}
+
+p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.to-top-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('https://image.flaticon.com/icons/svg/137/137608.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  min-height: 60px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  transition: all 0.2s linear;
+  background-color: teal;
+}
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: palevioletred;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.nav ul {
+  display: flex;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.nav li {
+}
+
+.nav a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav a:hover {
+  color: #212121;
+}
+
+.banner {
+  height: 200px;
+  background-image: url("https://images.pexels.com/photos/959430/pexels-photo-959430.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
