@@ -1,36 +1,4 @@
 'use strict';
-//const galleryItems = [
-//     {
-//       previews: 'img/preview-1.jpg',
-//       fullviews: 'img/fullview-1.jpg',
-//       alts: "alt text 1"
-//     },
-//     {
-//       previews: 'img/preview-2.jpg',
-//       fullviews: 'img/fullview-2.jpg',
-//       alts: "alt text 2"
-//     },
-//     {
-//       previews: 'img/preview-3.jpg',
-//       fullviews: 'img/fullview-3.jpg',
-//       alts: "alt text 3"
-//     },
-//     {
-//       previews: 'img/preview-4.jpg',
-//       fullviews: 'img/fullview-4.jpg',
-//       alts: "alt text 4"
-//     },
-//    {
-//       previews: 'img/preview-5.jpg',
-//       fullviews: 'img/fullview-5.jpg',
-//       alts: "alt text 5"
-//     },
-//     {
-//       previews: 'img/preview-6.jpg',
-//       fullviews: 'img/fullview-6.jpg',
-//       alts: "alt text 6"
-//     }
-// ];
 const galleryItems = [
     { preview: './img/preview-1.jpeg', fullview: './img/fullview-1.jpeg', alt: "alt text 1" },
     { preview: './img/preview-2.jpeg', fullview: './img/fullview-2.jpeg', alt: "alt text 2" },
@@ -48,7 +16,7 @@ class GalleryImages {
     }
 
     addItems({preview, fullview, alt}){
-        let items = `<li class="preview__items"><img src=${preview} data-fullview=${fullview} alt=${alt} width='350'></li>`
+        let items = `<li class="preview__items"><img src=${preview} data-fullview=${fullview} alt=${alt} width='350'></li>`;
         return items
     }
 
@@ -64,9 +32,6 @@ class GalleryImages {
         list.insertAdjacentHTML('beforeend', li);
 
         list.addEventListener('click', this.handlerPreviewClick);
-
-
-
 
     }
     handlerPreviewClick(ev){
