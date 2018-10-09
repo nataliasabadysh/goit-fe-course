@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 16px 0;
+    color: #212121;
+}
+

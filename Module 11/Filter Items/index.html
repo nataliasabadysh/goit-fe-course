@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Module-11</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h3 class="align-center">Laptops & Notebooks </h3>
+<div class=" row ">
+  <form class="form js-form col s4">
+      <h5 class="name_re">Screen size</h5>
+        <section>
+          <ul>
+            <li><label><input  class="filled-in"  type="checkbox" name="size" value="13" ><span>13"</span></label></li>
+            <li><label><input  class="filled-in" type="checkbox" name="size" value="15"> <span>15"</span></label></li>
+            <li><label><input  class="filled-in"  type="checkbox" name="size" value="17"> <span>17"</span></label></li>
+          </ul>
+        </section>
+        <section>
+           <h5 class="name_re">Color</h5>
+          <ul>
+            <li><label><input class="filled-in"  type="checkbox" name="color" value="white"> <span>white</span></label></li>
+            <li><label><input class="filled-in"  type="checkbox" name="color" value="gray"> <span>gray</span></label></li>
+            <li><label><input class="filled-in"  type="checkbox" name="color" value="black"> <span>black</span></label></li>
+          </ul>
+        </section>
+        <section>
+          <h5 class="name_re">Release date</h5>
+          <ul>
+            <li><label><input type="checkbox" name="release_date" value="2015" class="filled-in"> <span>2015</span></label></li>
+            <li><label><input type="checkbox" name="release_date" value="2016" class="filled-in"> <span>2016</span></label></li>
+            <li><label><input type="checkbox" name="release_date" value="2017" class="filled-in"> <span>2017</span></label></li>
+      </ul>
+    </section>
+    <button class="btn waves-effect waves-light" type="submit">Filter</button>
+    <button class="btn waves-effect waves-light" type="reset">Clear</button>
+  </form>
+  <div class="filtered-laptops col s8 z-depth-2">
+
+  </div>
+</div>
+<template id="card">
+  <div class="laptop ">
+    <p class="name">{{name}}</p>
+    <img src="{{img}}" alt="laptop" class="img">
+    <p class="descr font-i"><span class="font-b">Description:</span> {{descr}}</p>
+    <p class="color bg">Color: <span class="font-b"> {{color}}</span></p>
+    <p class="price bg">Price: <span class="font-b"> {{price}}</span></p>
+    <p class="release-date bg">Release date: <span class="font-b"> {{release_date}}</span></p>
+  </div>
+</template>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

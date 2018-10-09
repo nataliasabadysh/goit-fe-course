@@ -128,18 +128,19 @@ function deleteUser (target) {
             user.remove();
         }).catch( err => console.log(err))
 }
+
+// EDIT USER DETAILS
+
 refs.modal.addEventListener('click', handelModalClick);
 
 function handelModalClick({ target }) {
 
     const action = target.dataset.action;
-
     switch (action) {
         case 'save': saveUser(); break;
         case 'close': toggleModal(); break;
         default: throw new Error('Unrecognized action type ' + action);
     }
-
 }
 
 function updateUser(target) {  // --- ?
