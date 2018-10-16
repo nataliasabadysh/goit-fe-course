@@ -12,11 +12,13 @@ class GalleryImages {
     constructor(items, parentNode){
         this.items = items;
         this.parentNode = parentNode;
-
     }
 
     addItems({preview, fullview, alt}){
-        let items = `<li class="preview__items"><img src=${preview} data-fullview=${fullview} alt=${alt} width='350'></li>`;
+        let items = `
+                <li class="preview__items">
+                  <img src=${preview} data-fullview=${fullview} alt=${alt} width='350'>
+                </li>`;
         return items
     }
 

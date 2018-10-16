@@ -143,12 +143,13 @@ function handelModalClick({ target }) {
     }
 }
 
-function updateUser(target) {  // --- ?
+function updateUser(target) {
     const user = target.closest('.user');
     const userIdToUpdate = user.dataset.id;
+   //  console.log(userIdToUpdate);  id users
 
 
-    state.selectedId = userIdToUpdate; // selectedId = id
+    state.selectedId = userIdToUpdate;
 
     const userName = user.querySelector('.user-info__name').textContent;
     const userAge = user.querySelector('.user-info__age').textContent;
@@ -161,8 +162,8 @@ function updateUser(target) {  // --- ?
 }
 function saveUser() {  // --- ?
 
-    const updatedUserName = refs.modalNameInput.value;
-    const updatedUserAge = refs.modalAgeInput.value;
+    // const updatedUserName = refs.modalNameInput.value;
+    // const updatedUserAge = refs.modalAgeInput.value;
 
     const userIdToUpdate = state.selectedId;
 
@@ -172,8 +173,8 @@ function saveUser() {  // --- ?
         name: refs.modalNameInput.value,
         age: refs.modalAgeInput.value,
     };
-    fetch(`${API_URL}/${userIdToUpdate}`, {
-        method: 'PATCH',
+    fetch(`${API_URL}${userIdToUpdate}`, {
+        method: 'PUT',  // not patch
         body: JSON.stringify(userToUpdate),
         headers: {
             "Content-type": "application/json; charset=UTF-8"
@@ -182,11 +183,11 @@ function saveUser() {  // --- ?
         .then(response => response.json())
         .then(updateUser => {
 
-            const userNameEl = refs.userList.querySelector(`.user[data-id="${updatedUser.data.id}"] .user-info__name`,); // .user-info__name - ссылка на абзац
-            const userAgeEl = refs.userList.querySelector(`.user[data-id="${updatedUser.data.id}"] .user-info__age`,);
+            //const userNameEl = refs.userList.querySelector(`.user[data-id="${updatedUser.data.id}"] .user-info__name`,); // .user-info__name - ссылка на абзац
+           // const userAgeEl = refs.userList.querySelector(`.user[data-id="${updatedUser.data.id}"] .user-info__age`,);
 
-            userNameEl.textContent = updatedUser.data.name;
-            userAgeEl.textContent = updatedUser.data.age;
+           // userNameEl.textContent = updatedUser.data.name;
+           // userAgeEl.textContent = updatedUser.data.age;
 
             toggleModal();
         })

@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 16px 0;
+    color: #212121;
+}
+img{
+    width: 100%;
+}
+.post{
+    border: 2px solid #ddd;
+    padding: 30px;
+    background-color: #eee;
+    width: 600px;
+    text-align: center;
+    margin: 2px auto;
+}
+.laptop {
+    border-bottom: 2px solid #222;
+    padding: 10px 0;
+}
+.font-b{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.bg{
+    background-color: #eee;
+    padding: 10px 20px ;
+}
+.font-i{
+    font-style: italic;
+}
+.name{
+    font-size: 20px;
+    /*text-align: center;*/
+    font-weight: 600;
+    text-align: left;
+    padding-left: 30px;
+}

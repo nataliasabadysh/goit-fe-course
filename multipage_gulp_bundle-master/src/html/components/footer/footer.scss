@@ -1,0 +1,22 @@
+.footer-wrapper {
+  background: $primary-dark;
+}
+
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer a {
+  color: $text-on-primary;
+}

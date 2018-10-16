@@ -1,0 +1,18 @@
+.header-wrapper {
+  background: $primary;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header li {
+  margin: 0 .5rem;
+}

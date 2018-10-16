@@ -1,0 +1,32 @@
+Created sections page by gulp-rigger
+
+
+Запустить работу проекта
+Работает компонент один и мы его переиспользуем
+
+
+gulp
+npm run start
+
+
+
+Gulp and all our plagins
+
+gulp-sass
+gulp-postcss
+autoprefixer
+gulp-cssnano
+gulp-group-css-media-queries   -  Useful for postprocessing preprocessed CSS files
+del     -  Delete files and folders using globs
+gulp-htmlmin
+gulp-imagemin
+gulp-svgstore
+gulp-plumber
+gulp-rigger
+gulp-stylelint
+gulp-babel;
+gulp-uglify
+gulp-concat
+gulp-rename
+browser-sync;
+run-sequence

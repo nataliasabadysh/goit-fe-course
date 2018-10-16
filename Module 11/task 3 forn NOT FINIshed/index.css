@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 680px;
+    padding: 16px 0;
+    color: #212121;
+
+}
+p{
+    font-size: 18px;
+    font-weight: 600;
+}
+span{
+    font-size: 18px;
+}
+.item{
+    display: flex;
+    padding: 5px 20px;
+    border: 1px solid #F3F0E4;
+    margin: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+}

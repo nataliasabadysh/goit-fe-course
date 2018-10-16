@@ -65,7 +65,7 @@ const laptops = [
         size: 17,
         color: 'white',
         price: '2500 USD',
-        release_date: 2015,
+        release_date: 2016,
         name: 'Macbook Air White 17"',
         img: 'http://demo.posthemes.com/pos_zadademo/images/placeholder.png',
         descr:

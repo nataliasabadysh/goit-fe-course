@@ -1,0 +1,12 @@
+body {
+  background-color: #3bbfce; }
+
+h1 {
+  font-family: sans-serif;
+  font-weight: bold; }
+
+.markdown-body p {
+  color: blue; }
+
+.markdown-body:hover {
+  color: red; }
